@@ -102,6 +102,16 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
+// Tipado explícito para los elementos del payload de Recharts
+type TooltipPayload = {
+  name?: string;
+  value?: number | string;
+  color?: string;
+  dataKey?: string;
+  payload?: any;
+  [key: string]: any;
+};
+
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
@@ -138,9 +148,10 @@ const ChartTooltipContent = React.forwardRef<
         return null
       }
 
-      const [item] = payload
+      const [item] = payload as TooltipPayload[]
       const key = `${labelKey || item.dataKey || item.name || 'value'}`
       const itemConfig = getPayloadConfigFromPayload(config, item, key)
+      // Proteger el acceso a label
       const value =
         !labelKey && typeof label === 'string'
           ? config[label as keyof typeof config]?.label || label
@@ -185,10 +196,10 @@ const ChartTooltipContent = React.forwardRef<
       >
         {!nestLabel ? tooltipLabel : null}
         <div className="grid gap-1.5">
-          {payload.map((item, index) => {
+          {(payload as TooltipPayload[]).map((item, index) => {
             const key = `${nameKey || item.name || item.dataKey || 'value'}`
             const itemConfig = getPayloadConfigFromPayload(config, item, key)
-            const indicatorColor = color || item.payload.fill || item.color
+            const indicatorColor = color || item.payload?.fill || item.color
 
             return (
               <div
@@ -240,7 +251,7 @@ const ChartTooltipContent = React.forwardRef<
                       </div>
                       {item.value && (
                         <span className="font-mono font-medium tabular-nums text-foreground">
-                          {item.value.toLocaleString()}
+                          {typeof item.value === 'number' ? item.value.toLocaleString() : item.value}
                         </span>
                       )}
                     </div>
