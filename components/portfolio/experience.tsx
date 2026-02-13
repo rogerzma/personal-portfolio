@@ -28,7 +28,7 @@ const jobs: Job[] = [
   {
     company: "LABSOL COZCyT Zacatecas",
     url: "https://labsol.cozcyt.gob.mx/",
-    role: "Full Stack Developer",
+    role: "Junior Full Stack Developer",
     period: "2024 - 2025",
     description: [
       "Development of a new enrollment system for the electrical engineering academic unit at UAZ.",
