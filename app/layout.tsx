@@ -15,9 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tu Nombre | Desarrollador de Software",
+  title: "Rogelio Zamarripa Martínez | Software Engineer and Developer",
   description:
-    "Portafolio personal de desarrollador de software. Proyectos, experiencia y habilidades.",
+    "Personal portfolio of a software developer. Projects, experience, and skills.",
 };
 
 export default function RootLayout({

@@ -9,9 +9,7 @@ const skillCategories: SkillCategory[] = [
     skills: [
       "React",
       "Next.js",
-      "TypeScript",
       "JavaScript",
-      "Tailwind CSS",
       "HTML/CSS",
     ],
   },
@@ -20,25 +18,24 @@ const skillCategories: SkillCategory[] = [
     skills: [
       "Node.js",
       "Express",
-      "Python",
+      "Laravel",
       "REST APIs",
-      "GraphQL",
-      "WebSockets",
+      "PHP",
+      "Python",
     ],
   },
   {
-    title: "Bases de Datos",
+    title: "Databases",
     skills: [
       "PostgreSQL",
       "MongoDB",
-      "Redis",
+      "MySQL",
       "Firebase",
-      "Prisma",
       "SQL",
     ],
   },
   {
-    title: "DevOps & Herramientas",
+    title: "DevOps & Tools",
     skills: [
       "Git",
       "Docker",
@@ -56,7 +53,7 @@ export function Skills() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 flex items-center gap-3">
           <span className="font-mono text-sm text-primary">04.</span>
-          <h2 className="text-2xl font-bold text-foreground">Habilidades</h2>
+          <h2 className="text-2xl font-bold text-foreground">Skills</h2>
           <div className="h-px flex-1 bg-border" />
         </div>
 

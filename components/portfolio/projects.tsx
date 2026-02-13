@@ -11,56 +11,29 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Plataforma E-Commerce",
+    title: "Spatial georeferencing system for the Zacatecan agricultural sector",
     description:
-      "Aplicacion completa de comercio electronico con carrito de compras, pagos con Stripe, panel de administracion y gestion de inventario en tiempo real.",
-    technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Online platform that allows registering and monitoring polygons and cultivation zones in the Zacatecan soil",
+    technologies: ["Laravel", "PHP", "Composer", "PostgreSQL", "PostGis", "CSS"],
+    github: "https://github.com/rogerzma/geoportal",
+    live: "http://zacatecas.inifap.gob.mx:9000/",
     featured: true,
   },
   {
-    title: "Dashboard de Analiticas",
+    title: "Digital tool for estimating production costs in the state of Zacatecas",
     description:
-      "Panel de control interactivo para visualizar metricas de negocio con graficos en tiempo real, exportacion de reportes y notificaciones automaticas.",
-    technologies: ["React", "D3.js", "Node.js", "MongoDB", "WebSockets"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Platform that allows estimating production costs of Zacatecan crops, as well as cost projections and cost analysis",
+    technologies: ["Laravel", "PHP", "Composer", "PostgreSQL", "CSS"],
+    github: "https://github.com/rogerzma/agrocostos",
     featured: true,
   },
   {
-    title: "App de Gestion de Tareas",
-    description:
-      "Aplicacion colaborativa estilo Kanban con drag & drop, asignacion de tareas, recordatorios y sincronizacion en tiempo real entre equipos.",
+    title: "UAIE UAZ Enrollment Platform",
+    description: 
+      "Enrollment Management System for the School of Electrical Engineering at UAZ, including payment processing, course registration, and enrollment tracking.",
     technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
-    github: "https://github.com",
-    live: "https://example.com",
+    github: "https://github.com/rogerzma/InscripcionesUAIE",
     featured: true,
-  },
-  {
-    title: "API de Autenticacion",
-    description:
-      "Microservicio de autenticacion con JWT, refresh tokens, OAuth2 y manejo seguro de sesiones.",
-    technologies: ["Node.js", "Express", "Redis", "PostgreSQL"],
-    github: "https://github.com",
-    featured: false,
-  },
-  {
-    title: "CLI de Generacion de Codigo",
-    description:
-      "Herramienta de linea de comandos para generar boilerplate de proyectos con templates personalizables.",
-    technologies: ["TypeScript", "Node.js", "Commander.js"],
-    github: "https://github.com",
-    featured: false,
-  },
-  {
-    title: "Blog Personal con MDX",
-    description:
-      "Blog estatico con soporte para MDX, syntax highlighting, busqueda y generacion automatica de OG images.",
-    technologies: ["Next.js", "MDX", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: false,
   },
 ];
 
