@@ -11,7 +11,7 @@ export function Hero() {
         {/* Left: Text */}
         <div className="flex-1 text-center md:text-left">
           <p className="mb-4 font-mono text-sm text-primary">
-            Hola, mi nombre es
+            Hello, my name is
           </p>
           <h1 className="mb-4 text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
             Rogelio Zamarripa Martinez
