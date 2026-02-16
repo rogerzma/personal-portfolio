@@ -136,7 +136,7 @@ export function Projects() {
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 flex items-center gap-3">
           <span className="font-mono text-sm text-primary">03.</span>
-          <h2 className="text-2xl font-bold text-foreground">Proyectos</h2>
+          <h2 className="text-2xl font-bold text-foreground">Projects</h2>
           <div className="h-px flex-1 bg-border" />
         </div>
 
@@ -151,7 +151,7 @@ export function Projects() {
         {other.length > 0 && (
           <div>
             <h3 className="mb-6 text-center text-lg font-semibold text-foreground">
-              Otros proyectos destacados
+              Other projects
             </h3>
             <div className="space-y-3">
               {other.map((project) => (
